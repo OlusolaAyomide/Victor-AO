@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Victor A.O - Hire Me</title>
+        <link type="text/css" rel="stylesheet" href="otherFrameStyle.Css">
+        <meta name="description" content="This Website is basically concerning a Web Developer , Victor A.O also known as GraPhorWeb due to his design knowledges. This is a website to give people or Companies awareness about his skills with codings and scriptings .Victor A.O will be happy if a company will Hire him through this portfolio website. Visit the page to to know more and further details about hiring victor A.o">
+        <meta name="keywords" content="web designers,best web designer,web developer,best web developer">
+        <meta name="robot" content="nofollow">
+        <meta http-equiv="author" content="Victor A.O">
+        <meta http-equiv="pragma" content="no-cache">
+        <style>
+        body{background-color: #343D52;}
+    </style>
+        <script>
+            
+            //precache all page images
+            var pageImg = new Array()
+            pageImg[0] = new Image()
+            pageImg[1] = new Image()
+            pageImg[2] = new Image()
+            pageImg[3] = new Image()
+            pageImg[4] = new Image()
+            //assign src to image object
+            pageImg[0].src = "20220203_071939.png"
+            pageImg[1].src = "20220202_141005.png"
+            pageImg[2].src = "20220202_135731.png"
+            pageImg[3].src = "20220202_135605.png"
+            pageImg[4].src = "20220202_135541.png"
+            
+            function goBack(){
+                history.go(-1)
+            }
+            
+            function createImages(){
+                with(document){
+               var goBackImg = getElementById("back")
+               var myImg = getElementById("myImage")
+               var phone = getElementById("phone")
+               var Mail = getElementById("email")
+               var WhatsApp = getElementById("whatsapp")
+               }
+                goBackImg.src = pageImg[0].src
+                myImg.src = pageImg[1].src
+                phone.src = pageImg[2].src
+                Mail.src = pageImg[3].src
+                WhatsApp.src = pageImg[4].src
+            }
+            
+            window.onload = createImages
+        </script>
+    </head>
+    
+    <body style="display: flex; flex-flow: row nowrap; justify-content: space-around;">
+        <header class="forHire">
+            <main class="intro">
+                <a href="javascript: void goBack()"><img src="20220203_071939.png" alt="goBack" id="back"></a>
+                <figure>
+                    <img src="20220202_141005.png" id="myImage" alt="Victor AO Image">
+                    <figcaption>Victor A.O</figcaption>
+                </figure>
+                <p id="underHire1">Looking to Hire a Web Developer who can do custom Web Application Development?.</p>
+                <p id="underHire2">Victor A.O is an experienced and skilled Web and App  Developer.</p>
+                <div class="HireMe"><a href="mailto:ayomideologunleko99@gmail.com">Hire Me</a>
+                </div>
+            </main>
+            <div class="contacts"> 
+                <div class="Number">
+                    <a href="tel:07063475466"><img src="20220202_135731.png" id="phone" name="phone" alt="Telephone"></a>
+                </div>
+                
+                <div class="Email">
+                    <a href="mailto:ayomideologunleko99@gmail.com"><img src="20220202_135605.png" id="email" name="mail" alt="Email"></a>
+                </div>
+                
+                <div class="WhatsApp">
+                    <a href="https://wa.me/message/SZTQ2QSERWKEM1"><img src="20220202_135541.png" id="whatsapp" name="whatsApp" alt="WhatsApp"></a>
+                </div>
+            </div>
+                
+    </header>
+    </body>
+    </html>
